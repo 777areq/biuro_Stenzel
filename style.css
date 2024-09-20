@@ -1,0 +1,60 @@
+main{
+    display:flex
+}
+body{
+    font-family: Georgia;
+    text-align: center;
+}
+header, footer{
+    background-color: #BA6B6C;
+    padding: 15px;
+}
+HEADER a{
+color: white;
+padding: 7px;
+}
+.left, .right{
+    background-color: #EF9A9A;
+    width: 20%;
+    height: 600px;
+}
+.center{
+    background-color: mistyrose;
+    width: 70%;
+    height: 600px;
+    margin: 7px;
+    text-align: left;
+    
+}
+   
+    
+}
+.center img{
+    box-shadow: 7px 7px 7px 7px dimgray;
+    margin: 5px
+}
+h3 { 
+    color: maroon; /* Kolor tekstu nagłówka */ 
+    font-size: 50px; /* Większy rozmiar czcionki */ 
+    font-weight: bold; /* Pogrubienie */ 
+    text-align: center; /* Wyrównanie nagłówka do środka */ 
+    margin-bottom: 20px; /* Odstęp pod nagłówkiem */ 
+    } 
+    table.promocje { 
+    border: 1px solid black; /* Obramowanie tabeli */ 
+    border-collapse: collapse; /* Połączenie obramowań komórek */ 
+    margin: 0 auto; /* Wycentrowanie tabeli */ 
+    background-color: #EF9A9A; /* Tło tabeli, zbliżone do różowego */
+     width: 200px; /* Stała szerokość tabeli */ 
+    font-family: 'Arial', sans-serif; /* Czcionka dla tekstu */
+     } 
+    table.promocje td { 
+     
+     text-align: left;
+     /* Wyrównanie tekstu do lewej */ 
+    } 
+    table.promocje tr td:first-child { 
+    text-align: left; /* Wyrównanie tekstu miast do lewej */ 
+    } 
+    table.promocje tr td:last-child { text-align: right; /* Wyrównanie cen do prawej */ 
+    }
