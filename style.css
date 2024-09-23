@@ -28,7 +28,7 @@ padding: 7px;
 }
    
     
-}
+
 .center img{
     box-shadow: 7px 7px 7px 7px dimgray;
     margin: 5px
@@ -39,22 +39,15 @@ h3 {
     font-weight: bold; /* Pogrubienie */ 
     text-align: center; /* Wyrównanie nagłówka do środka */ 
     margin-bottom: 20px; /* Odstęp pod nagłówkiem */ 
-    } 
-    table.promocje { 
-    border: 1px solid black; /* Obramowanie tabeli */ 
-    border-collapse: collapse; /* Połączenie obramowań komórek */ 
-    margin: 0 auto; /* Wycentrowanie tabeli */ 
-    background-color: #EF9A9A; /* Tło tabeli, zbliżone do różowego */
-     width: 200px; /* Stała szerokość tabeli */ 
-    font-family: 'Arial', sans-serif; /* Czcionka dla tekstu */
-     } 
-    table.promocje td { 
-     
-     text-align: left;
-     /* Wyrównanie tekstu do lewej */ 
-    } 
-    table.promocje tr td:first-child { 
-    text-align: left; /* Wyrównanie tekstu miast do lewej */ 
-    } 
-    table.promocje tr td:last-child { text-align: right; /* Wyrównanie cen do prawej */ 
-    }
+}
+table{
+    margin: auto;
+    width: 80%;
+    border: solid 1px maroon
+
+}
+h3::first-letter{
+    font-size: 170%;
+    color: #8b0a0c;
+}
+    
