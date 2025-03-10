@@ -1,0 +1,96 @@
+<?php
+$db = mysqli_connect('localhost', 'root','','podroze');
+
+$q = "SELECT nazwaPliku, podpis FROM zdjecia ORDER BY podpis";
+$r = mysqli_query($db,$q);
+$obrazy = mysqli_fetch_all($r, MYSQLI_BOTH);
+
+
+$q = "SELECT cel, dataWyjazdu FROM wycieczki WHERE dostepna = 0";
+$r = mysqli_query($db, $q);
+$wycieczki = mysqli_fetch_all($r, MYSQLI_BOTH);
+
+mysqli_close($db);
+?>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+    <title>Poznaj Europe</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <header>
+        <h1>BIURO PODRÓŻY</h1>
+    </header>
+    <main>
+    <div class="left">
+        <h3>Promocje</h3>
+        <table class="promocje">
+        <tr>
+        <td>Wenecja</td>
+           <td>od 1600zł</td>
+        </tr>
+        <tr>
+        <td>Londyn</td>
+           <td>od 1350zł</td>
+           </tr>
+           
+        <tr>
+            <td>Chorwacja</td>
+           <td>od 1200zł</td>
+        </tr>
+        <tr>
+            <td>Barcelona</td>
+           <td>od 1500zł</td>
+        </tr>
+    </table>
+</div>
+<div class="center">
+    <section>
+        <h3>W tym roku jedziemy do...</h3>
+        
+    <img src="londyn.jpg"> 
+    <img src="barcelona.jpg">
+    <img src="wenecja.jpg">
+    <img src="chorwacja.jpg">
+
+</section>
+<section>
+    
+    <h2>W poprzednich latach byliśmy...</h2>
+    <p>I. Dnia 2019-07-14 pojechaliśmy do Francja,Paryż</p>
+    <p>II. Dnia 2019-07-14 pojechaliśmy do Hiszpania Barcelona</p>
+    <p>III. Dnia 2019-08-14 pojechaliśmy do Hiszpania,Barcelona</p>
+</section>
+    
+</div>
+   <div class="right">
+      <h3>Kontakt</h3>
+      <nav>
+      <a href="kontakt.html">napisz do nas</a>
+      <p>telefon: 444555666</p>
+      </nav>
+    </div>
+    </main>
+    
+    <footer>
+        Strone wykonał:<i>Arkadiusz.S</i>
+    </footer>
+</body>
+</html>
+
+
+ 
+
+
+
+
+
